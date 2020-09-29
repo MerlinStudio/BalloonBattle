@@ -46,7 +46,6 @@ public class AIBot : MonoBehaviour
         _rigidbody2DBot = GetComponent<Rigidbody2D>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
         PositionBot = GetComponent<Transform>();
-        Charactar = Char.GetComponent<Transform>().position;
     }
 
     void FixedUpdate()
@@ -169,6 +168,7 @@ public class AIBot : MonoBehaviour
     }
     private void CheckDirectionDistanceChar()    //когда пришли проверяем дистанцию до игрока
     {
+        Charactar = Char.GetComponent<Transform>().position;
         Bot = PositionBot.position;
         float _distance = Bot.x - Charactar.x;
         valueY = Bot.y - Charactar.y;

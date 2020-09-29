@@ -27,11 +27,11 @@ public class Controller : MonoBehaviour
     {
         if(instance == null) { instance = this; }
 
-        //NumberBots = SaveJson.instance.save.NumberBots;
-        //PlayerBalloon = SaveJson.instance.save.PlayerBalloon;
-        //Name.text = SaveJson.instance.save.Name;
-        NumberBots = 1;
-        PlayerBalloon = 2;
+        NumberBots = SaveJson.instance.save.NumberBots;
+        PlayerBalloon = SaveJson.instance.save.PlayerBalloon;
+        Name.text = SaveJson.instance.save.Name;
+        //NumberBots = 1;   // для теста
+        //PlayerBalloon = 2;
 
         Text = Timer.GetComponent<Text>();
 

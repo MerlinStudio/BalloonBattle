@@ -6,15 +6,11 @@ ScriptsOnlyBuild:
     - Aiming
     - Bullet
     - Controller
-    - Deformation
-    - Guns
     - Healths
     - JumpBot
     - Loadscene
     - Menu
-    - MoveButtonGun
     - MoveChar
-    - Pause
     - RotateGun
     - SaveJson
     - ShakeButton
@@ -71,6 +67,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -86,27 +86,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12768}
     - Class: 114
-      Script: {instanceID: 12860}
+      Script: {instanceID: 12858}
     - Class: 114
-      Script: {instanceID: 13204}
+      Script: {instanceID: 13202}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13392}
     - Class: 114
-      Script: {instanceID: 13482}
+      Script: {instanceID: 13478}
     - Class: 114
-      Script: {instanceID: 13550}
+      Script: {instanceID: 13546}
     - Class: 114
-      Script: {instanceID: 13832}
+      Script: {instanceID: 13828}
     - Class: 114
-      Script: {instanceID: 14292}
+      Script: {instanceID: 14288}
     - Class: 114
-      Script: {instanceID: 14302}
+      Script: {instanceID: 14298}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14810}
     - Class: 114
-      Script: {instanceID: 14848}
+      Script: {instanceID: 14840}
     - Class: 114
-      Script: {instanceID: 14868}
+      Script: {instanceID: 14860}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -167,6 +167,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12094}
     - Class: 114
+      Script: {instanceID: 12146}
+    - Class: 114
       Script: {instanceID: 12186}
     - Class: 114
       Script: {instanceID: 12232}
@@ -177,41 +179,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12768}
     - Class: 114
-      Script: {instanceID: 12818}
+      Script: {instanceID: 12858}
     - Class: 114
-      Script: {instanceID: 12860}
+      Script: {instanceID: 12872}
     - Class: 114
-      Script: {instanceID: 12874}
+      Script: {instanceID: 13522}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 13546}
     - Class: 114
-      Script: {instanceID: 13526}
+      Script: {instanceID: 13872}
     - Class: 114
-      Script: {instanceID: 13550}
+      Script: {instanceID: 13906}
     - Class: 114
-      Script: {instanceID: 13876}
+      Script: {instanceID: 14248}
     - Class: 114
-      Script: {instanceID: 13910}
+      Script: {instanceID: 14288}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 14298}
     - Class: 114
-      Script: {instanceID: 14292}
+      Script: {instanceID: 14338}
     - Class: 114
-      Script: {instanceID: 14302}
+      Script: {instanceID: 14722}
     - Class: 114
-      Script: {instanceID: 14306}
+      Script: {instanceID: 14728}
     - Class: 114
-      Script: {instanceID: 14344}
+      Script: {instanceID: 14840}
     - Class: 114
-      Script: {instanceID: 14464}
+      Script: {instanceID: 14852}
     - Class: 114
-      Script: {instanceID: 14730}
+      Script: {instanceID: 17524}
     - Class: 114
-      Script: {instanceID: 14736}
+      Script: {instanceID: 17568}
     - Class: 114
-      Script: {instanceID: 14848}
-    - Class: 114
-      Script: {instanceID: 14860}
+      Script: {instanceID: 17620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -293,7 +293,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 3f9b7bba72a72f213caa199c25c02e17
+      Hash: b9e3c551a527d23f0117a57cd1870198
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -443,12 +443,6 @@ ScriptsOnlyBuild:
     className: Loadscene
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Deformation
-  - hash:
-      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -495,12 +489,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Guns
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -659,28 +647,16 @@ ScriptsOnlyBuild:
     className: SaveJson
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MoveButtonGun
-  - hash:
-      serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: da5d3469bf48fac36d8f26aea419c8f2
+      Hash: c4c447e5fd55c8431fc413f60a89d98c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controller
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Pause
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -773,7 +749,7 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: 5a40d8a151ba26defb40b8fa65a9ba6b
+      Hash: 99b591a093b0933152ac18d94de84d0b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveChar
@@ -811,4 +787,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Scene_1.unity
-  playerPath: D:/Game dev/MyWorms/Balloon Battle v3.apk
+  playerPath: D:/Game dev/MyWorms/Balloon Battle v4.apk

@@ -8,6 +8,6 @@ public class ShakeButton : MonoBehaviour
     void Start()
     {
         ThisObject = GetComponent<RectTransform>();
-        ThisObject.DOShakeAnchorPos(5, 15, 4, 1, true, true).SetLoops(-1,LoopType.Restart);
+        ThisObject.DOShakePosition(5, new Vector2(10,10), 3, 1, false, true).SetLoops(-1, LoopType.Restart).SetDelay(2);
     }   
 }
