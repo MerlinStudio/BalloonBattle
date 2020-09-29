@@ -1,15 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Healths : MonoBehaviour
 {
     public Image HealthScale;
-    public GameObject CharSprite;
-    public GameObject GameOver;
+    public GameObject CharSprite, GameOver;
     public bool isCharacter;
     public static bool isGameOver;
+
+    private Animation Animation;
+    private Animator Animator;
+    private SpriteRenderer SpriteRenderer;
+    private MoveChar MoveChar;
+
+    private void Start()
+    {
+        Animator = GetComponent<Animator>();
+        Animation = GetComponent<Animation>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+        MoveChar = GetComponent<MoveChar>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -44,24 +54,24 @@ public class Healths : MonoBehaviour
         if(HealthScale.fillAmount == 0 && isCharacter)   //GameOver бота
         {
             isGameOver = true;
-            gameObject.GetComponent<Animator>().SetTrigger("GameOver");
-            gameObject.GetComponent<MoveChar>().enabled = false;
+            MoveChar.enabled = false;
             Controller.TimerStart = false;
-            Invoke("Delay_end", 2);
+            Animator.SetTrigger("GameOver");
+            Invoke("DelayEnd", 2);
         }
         if (HealthScale.fillAmount == 0 && !isCharacter)   //GameOver игрока
         {
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.GetComponent<Animation>().Play("BotBOOM");
-            Invoke("Delay_end_bot", 0.2f);
+            SpriteRenderer.enabled = false;
+            Animation.Play("BotBOOM");
+            Invoke("DelayEndBot", 0.2f);
         }
     }
-    private void Delay_end()
+    private void DelayEnd() // вызов с инвока
     {
         CharSprite.SetActive(false);
         GameOver.SetActive(true);
     }
-    private void Delay_end_bot()
+    private void DelayEndBot()  // вызов с инвока
     {
         gameObject.SetActive(false);
     }

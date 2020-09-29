@@ -60,16 +60,12 @@
     <Compile Include="Assets\Script\Menu.cs" />
     <Compile Include="Assets\Script\JumpBot.cs" />
     <Compile Include="Assets\Script\Loadscene.cs" />
-    <Compile Include="Assets\Script\Deformation.cs" />
-    <Compile Include="Assets\Script\Guns.cs" />
     <Compile Include="Assets\Script\ShakeButton.cs" />
     <Compile Include="Assets\Spites\Game\NewBehaviourScript.cs" />
     <Compile Include="Assets\Script\Healths.cs" />
     <Compile Include="Assets\Script\AD.cs" />
     <Compile Include="Assets\Script\SaveJson.cs" />
-    <Compile Include="Assets\Script\MoveButtonGun.cs" />
     <Compile Include="Assets\Script\Controller.cs" />
-    <Compile Include="Assets\Script\Pause.cs" />
     <Compile Include="Assets\Script\Aiming.cs" />
     <Compile Include="Assets\Script\RotateGun.cs" />
     <Compile Include="Assets\Script\MoveChar.cs" />

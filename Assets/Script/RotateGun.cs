@@ -5,12 +5,18 @@ public class RotateGun : MonoBehaviour
     public static bool lookRight;
 
     public SpriteRenderer Char;
+    private Camera Camera;
+
+    private void Start()
+    {
+        Camera = Camera.main;
+    }
     private void Update()
     {
         if (Aiming.isAiming == true)
         {
             Vector2 mousePos = Input.mousePosition;
-            Vector3 point = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 25));
+            Vector3 point = Camera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 25));
             var angle = Vector2.Angle(Vector2.right, point - transform.position);//угол между вектором от объекта к мыше и осью х        
 
             if (angle < 90)

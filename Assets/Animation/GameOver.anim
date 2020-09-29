@@ -180,45 +180,45 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.49784574, z: 0.33333334}
       - serializedVersion: 3
         time: 1.25
-        value: {x: 1.3372622, y: 15.311657, z: 0}
-        inSlope: {x: -96.2544, y: 0.27770165, z: 0}
-        outSlope: {x: -96.2544, y: 0.27770165, z: 0}
+        value: {x: 1.3372622, y: 12.9, z: 0}
+        inSlope: {x: -96.2544, y: 0, z: 0}
+        outSlope: {x: -96.2544, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.42265368, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.2666667
-        value: {x: -0.1708954, y: 15.314804, z: 0}
-        inSlope: {x: -84.84454, y: 0, z: 0}
-        outSlope: {x: -84.84454, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
         time: 1.5
         value: {x: -7.4010453, y: 21.2069, z: 0}
-        inSlope: {x: -0.6219244, y: 58.385815, z: 0}
-        outSlope: {x: -0.6219244, y: 58.385815, z: 0}
+        inSlope: {x: -0.6219328, y: 56.744102, z: 0}
+        outSlope: {x: -0.6219328, y: 56.744102, z: 0}
         tangentMode: 0
         weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.59479487, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        inWeight: {x: 0.33333334, y: 0.74991226, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.85938215, z: 0.33333334}
       - serializedVersion: 3
         time: 1.5166667
-        value: {x: -7.405228, y: 22.167093, z: 0}
-        inSlope: {x: 0, y: 56.879425, z: 0}
-        outSlope: {x: 0, y: 56.879425, z: 0}
+        value: {x: -7.405228, y: 22.17115, z: 0}
+        inSlope: {x: 0, y: 58.943535, z: 0}
+        outSlope: {x: 0, y: 58.943535, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 1.7166667
+        value: {x: -0.9295908, y: 35.867756, z: 0}
+        inSlope: {x: 79.99035, y: 74.77168, z: 0}
+        outSlope: {x: 79.99035, y: 74.77168, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.6816249, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1.75
-        value: {x: 2.1, y: 35.1, z: 0}
-        inSlope: {x: 102.20852, y: 62.1862, z: 0}
-        outSlope: {x: 102.20852, y: 62.1862, z: 0}
+        value: {x: 2.1, y: 38.43699, z: 0}
+        inSlope: {x: 102.20852, y: 78.81189, z: 0}
+        outSlope: {x: 102.20852, y: 78.81189, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.40378714, y: 0.33333334, z: 0.33333334}
@@ -534,8 +534,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.49784574
       - serializedVersion: 3
-        time: 1.2666667
-        value: 15.314804
+        time: 1.25
+        value: 12.9
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -545,20 +545,20 @@ AnimationClip:
       - serializedVersion: 3
         time: 1.5
         value: 21.2069
-        inSlope: 58.385815
-        outSlope: 58.385815
+        inSlope: 56.744102
+        outSlope: 56.744102
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.59479487
-        outWeight: 0.33333334
+        inWeight: 0.74991226
+        outWeight: 0.85938215
       - serializedVersion: 3
-        time: 1.75
-        value: 35.1
-        inSlope: 62.1862
-        outSlope: 62.1862
-        tangentMode: 136
+        time: 1.7166667
+        value: 35.867756
+        inSlope: 74.77168
+        outSlope: 74.77168
+        tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
+        inWeight: 0.6816249
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2

@@ -10,12 +10,14 @@ public class Bullet : MonoBehaviour
 
     public static int numberGun;
 
-    private Rigidbody2D _rigidbody2D;
+    private Rigidbody2D Rigidbody2D;
+    private Animation Animation;
 
     void Start ()
     {      
-        _rigidbody2D = GetComponent<Rigidbody2D> ();
-        _rigidbody2D.AddForce (transform.right * moveSpeed, ForceMode2D.Impulse);
+        Rigidbody2D = GetComponent<Rigidbody2D>();
+        Animation = GetComponent<Animation>();
+        Rigidbody2D.AddForce (transform.right * moveSpeed, ForceMode2D.Impulse);
 
         if (Controller.GamePlayer)
         {
@@ -26,7 +28,7 @@ public class Bullet : MonoBehaviour
 
         if(numberGun == 0)
         {
-            gameObject.GetComponent<Animation>().Play("Rotation");
+            Animation.Play("Rotation");
         }
 
         Invoke("Delay", 7f);
@@ -39,22 +41,22 @@ public class Bullet : MonoBehaviour
         if ((collision.tag == "Ground" || collision.tag == "Player") && numberGun == 0)
         {
             AfterShot(0.5f);
-            gameObject.GetComponent<Animation>().Play("Boom");
+            Animation.Play("Boom");
             //Instantiate(MaskBOOM, gameObject.transform.position, gameObject.transform.rotation);
         }
 
         if (collision.tag == "Ground" && numberGun == 1)
         {
             AfterShot(5f);
-            gameObject.GetComponent<Transform>().rotation = new Quaternion();
+            GetComponent<Transform>().rotation = new Quaternion();
         }
     }
 
     private void AfterShot(float timer)
     {
-        gameObject.GetComponent<SpriteRenderer>().sprite = BulletSprite;
-        _rigidbody2D.isKinematic = true;
-        _rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
+        GetComponent<SpriteRenderer>().sprite = BulletSprite;
+        Rigidbody2D.isKinematic = true;
+        Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
         Invoke("Delay", timer);
     }
 

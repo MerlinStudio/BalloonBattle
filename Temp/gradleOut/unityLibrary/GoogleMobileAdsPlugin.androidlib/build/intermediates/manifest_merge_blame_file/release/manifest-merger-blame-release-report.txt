@@ -1,0 +1,27 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.unity.ads"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk android:targetSdkVersion="19" />
+7-->D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml
+8
+9    <application>
+9-->D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:3:3-6:17
+10        <uses-library
+10-->D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:4:5-84
+11            android:name="org.apache.http.legacy"
+11-->D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:4:44-81
+12            android:required="false" />
+12-->D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:4:19-43
+13
+14        <meta-data
+14-->D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:5:5-96
+15            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+15-->D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:5:16-72
+16            android:value="true" />
+16-->D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml:5:73-93
+17    </application>
+18
+19</manifest>

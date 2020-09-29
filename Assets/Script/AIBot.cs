@@ -21,6 +21,8 @@ public class AIBot : MonoBehaviour
     public Sprite Idle , Stay;
 
     public GameObject TriggerJumpRight, TriggerJumpLeft, Cloud, Arrow;
+    private SpriteRenderer SpriteRenderer;
+    private Transform PositionBot;
 
     private bool isCharRight, isMove, isFlagMinDistance;
 
@@ -37,25 +39,29 @@ public class AIBot : MonoBehaviour
     void Start()
     {
         if(instance == null) { instance = this; }
-        Controll_Jump(false, false);
+        ControllJump(false, false);
         isMove = false;
         isStart = true;
         NumberGun = 0;
+        _rigidbody2DBot = GetComponent<Rigidbody2D>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+        PositionBot = GetComponent<Transform>();
+        Charactar = Char.GetComponent<Transform>().position;
     }
 
     void FixedUpdate()
     {
         if (Controller.GamePlayer == false && isStart) // старт
         {
-            StartCoroutine(Start_Round());
+            StartCoroutine(StartRound());
             isStart = false;
         }
 
         if (isMove)
         { 
-            Go_Position(SelectDistance);
+            GoPosition(SelectDistance);
 
-            if(timer > 0)   //если застял       
+            if(timer > 0)   //если застял прицеливаемся и стреляем с места застревания       
             {
                 timer -= Time.fixedDeltaTime;
                 if(timer <= 0)
@@ -63,8 +69,8 @@ public class AIBot : MonoBehaviour
                     if(PosNow >= Bot.x - 0.5f && PosNow <= Bot.x + 0.5f)
                     {
                         isMove = false;
-                        Check_Direction_Distance_Char();
-                        Select_Gun();
+                        CheckDirectionDistanceChar();
+                        SelectGun();
                         Aiminig();
                         timer = 0;
                     }
@@ -78,11 +84,10 @@ public class AIBot : MonoBehaviour
         }
     }
 
-    IEnumerator Start_Round()   //определяем точку для перемещение
+    IEnumerator StartRound()   //определяем точку для перемещение
     {
-        _rigidbody2DBot = GetComponent<Rigidbody2D>();
 
-        gameObject.GetComponent<SpriteRenderer>().sprite = Stay;
+        SpriteRenderer.sprite = Stay;
 
         Arrow.SetActive(true);
         Cloud.SetActive(true);
@@ -92,7 +97,7 @@ public class AIBot : MonoBehaviour
         Cloud.SetActive(false);
         Arrow.SetActive(false);
 
-        Bot = gameObject.GetComponent<Transform>().position;
+        Bot = PositionBot.position;
         StartPos = Bot.x;
 
         SelectDistance = UnityEngine.Random.Range(-6, 6);
@@ -111,29 +116,29 @@ public class AIBot : MonoBehaviour
         isMove = true;
 
     }
-    private void Go_Position(float valueDistance)   //передвигаемся к выбранной точке
+    private void GoPosition(float valueDistance)   //передвигаемся к выбранной точке
     {
-        Bot = gameObject.GetComponent<Transform>().position;
-        gameObject.GetComponent<SpriteRenderer>().sprite = Idle;
+        Bot = PositionBot.position;
+        SpriteRenderer.sprite = Idle;
 
         if (valueDistance > StartPos)
         {
-            Controll_Jump(false, true);
+            ControllJump(false, true);
             transform.Translate(Vector2.right * SpeedMoveBot * Time.fixedDeltaTime); // idle left
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            SpriteRenderer.flipX = true;
 
             if (valueDistance <= Bot.x)
             {
                 isMove = false;
-                Check_Direction_Distance_Char();
+                CheckDirectionDistanceChar();
                 if (distance < 7 && isFlagMinDistance)
                 {
-                    Check_min_distance();
+                    CheckMinDistance();
                     isFlagMinDistance = false;
                 }
                 else
                 {
-                    Select_Gun();
+                    SelectGun();
                     Aiminig();
                 }
             }
@@ -141,31 +146,30 @@ public class AIBot : MonoBehaviour
 
         if (valueDistance <= StartPos)
         {
-            Controll_Jump(true, false);
+            ControllJump(true, false);
             transform.Translate(Vector2.left * SpeedMoveBot * Time.fixedDeltaTime); // idle left
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            SpriteRenderer.flipX = false;
 
             if (valueDistance >= Bot.x)
             {
                 isMove = false;
-                Check_Direction_Distance_Char();
+                CheckDirectionDistanceChar();
                 if(distance < 7 && isFlagMinDistance)
                 {
-                    Check_min_distance();
+                    CheckMinDistance();
                     isFlagMinDistance = false;
                 }
                 else
                 {
-                    Select_Gun();
+                    SelectGun();
                     Aiminig();
                 }
             }
         }
     }
-    private void Check_Direction_Distance_Char()    //когда пришли проверяем дистанцию до игрока
+    private void CheckDirectionDistanceChar()    //когда пришли проверяем дистанцию до игрока
     {
-        Bot = gameObject.GetComponent<Transform>().position;
-        Charactar = Char.GetComponent<Transform>().position;
+        Bot = PositionBot.position;
         float _distance = Bot.x - Charactar.x;
         valueY = Bot.y - Charactar.y;
 
@@ -181,23 +185,23 @@ public class AIBot : MonoBehaviour
 
         distance = Math.Abs(_distance);
     }
-    private void Check_min_distance()   //если дистанция слишком маленькая идем в точку +-4 от игрока
+    private void CheckMinDistance()   //если дистанция слишком маленькая идем в точку +-4 от игрока
     {
         StartPos = Bot.x;
         if (isCharRight)
         {
             SelectDistance = Charactar.x - 4;
-            Go_Position(SelectDistance);
+            GoPosition(SelectDistance);
         }
         else
         {
             SelectDistance = Charactar.x + 4;
-            Go_Position(SelectDistance);
+            GoPosition(SelectDistance);
         } 
 
         isMove = true;
     }
-    private void Select_Gun()   //выбираем оружие в зависимости от полученой дистанции
+    private void SelectGun()   //выбираем оружие в зависимости от полученой дистанции
     {
         if (distance >= 15)
         {
@@ -216,11 +220,11 @@ public class AIBot : MonoBehaviour
     }
     private void Aiminig()  //прицеливаемся
     {
-        Controll_Jump(false, false);
+        ControllJump(false, false);
         BotAiminig = true;
 
-        if (isCharRight) { gameObject.GetComponent<SpriteRenderer>().flipX = true; }
-        else gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        if (isCharRight) { SpriteRenderer.flipX = true; }
+        else SpriteRenderer.flipX = false;
 
         if (NumberGun == 0 || NumberGun == 1)
         {
@@ -255,22 +259,22 @@ public class AIBot : MonoBehaviour
 
             if (NumberGun == 0)
             {
-                StartCoroutine(Fire_Gun_0());
+                StartCoroutine(FireGun0());
             }
             else
             {
-                StartCoroutine(Fire_Gun_1());
+                StartCoroutine(FireGun1());
             }
             
         }
 
         if (NumberGun == 2)
         {
-            StartCoroutine(Fire_Gun_2());
+            StartCoroutine(FireGun2());
         }
 
     }
-    IEnumerator Fire_Gun_0()    //логика стрельбы 0го оружия
+    IEnumerator FireGun0()    //логика стрельбы 0го оружия
     {
         Cloud.SetActive(true);
         int wait = UnityEngine.Random.Range(1, 3);
@@ -285,9 +289,9 @@ public class AIBot : MonoBehaviour
 
         Instantiate(PrefabBullet[NumberGun], ShootPostion[NumberGun].position, ShootPostion[NumberGun].rotation);
 
-        StartCoroutine(Go_Back(1));
+        StartCoroutine(GoBack(1));
     }   
-    IEnumerator Fire_Gun_1()    //логика стрельбы 1го оружия
+    IEnumerator FireGun1()    //логика стрельбы 1го оружия
     {
         float Power = 1;
         Cloud.SetActive(true);
@@ -307,9 +311,9 @@ public class AIBot : MonoBehaviour
                 Power -= 1f / 30;
             }
         }
-        StartCoroutine(Go_Back(1));
+        StartCoroutine(GoBack(1));
     }   
-    IEnumerator Fire_Gun_2()    //логика стрельбы 2го оружия
+    IEnumerator FireGun2()    //логика стрельбы 2го оружия
     {
         Cloud.SetActive(true);
         int wait = UnityEngine.Random.Range(1, 3);
@@ -329,9 +333,9 @@ public class AIBot : MonoBehaviour
         }
 
         Gun[NumberGun].GetComponent<Animation>().Play("Hummer");
-        StartCoroutine(Go_Back(1.4f));
+        StartCoroutine(GoBack(1.4f));
     }   
-    IEnumerator Go_Back(float wait) //действие после стрельмы 
+    IEnumerator GoBack(float wait) //действие после стрельмы 
     {
         BotAiminig = false;
         yield return new WaitForSeconds(wait);
@@ -346,8 +350,8 @@ public class AIBot : MonoBehaviour
             {
                 yield return new WaitForFixedUpdate();
                 {
-                    Controll_Jump(true, false);
-                    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                    ControllJump(true, false);
+                    SpriteRenderer.flipX = false;
                     transform.Translate(Vector2.left * SpeedMoveBot * Time.fixedDeltaTime); // idle left
                     move -= 1f / 100;
                 }
@@ -359,8 +363,8 @@ public class AIBot : MonoBehaviour
             {
                 yield return new WaitForFixedUpdate();
                 {
-                    Controll_Jump(false, true);
-                    gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                    ControllJump(false, true);
+                    SpriteRenderer.flipX = true;
                     transform.Translate(Vector2.right * SpeedMoveBot * Time.fixedDeltaTime); // idle right
                     move -= 1f / 100;
                 }
@@ -368,7 +372,7 @@ public class AIBot : MonoBehaviour
         }
         if (run == 2)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = Stay;
+            SpriteRenderer.sprite = Stay;
             Cloud.SetActive(true);
             while (move >= 0)
             {
@@ -379,18 +383,18 @@ public class AIBot : MonoBehaviour
             }
             Cloud.SetActive(false);
         }
-        Delay_End();
+        DelayEnd();
         StopAllCoroutines();
     }         
-    private void Controll_Jump(bool left, bool right)   //управление прыжками
+    private void ControllJump(bool left, bool right)   //управление прыжками
     {
         TriggerJumpRight.SetActive(right);
         TriggerJumpLeft.SetActive(left);
     }
-    public void Delay_End() //конец хода
+    public void DelayEnd() //конец хода
     {
-        gameObject.GetComponent<SpriteRenderer>().sprite = Stay;
-        Controll_Jump(false, false);
+        SpriteRenderer.sprite = Stay;
+        ControllJump(false, false);
         Controller.TimerStart = false;
         Controller.GamePlayer = true;
         Controller.NextMovePlayer = true;

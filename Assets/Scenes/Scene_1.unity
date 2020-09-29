@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 35000504}
   - component: {fileID: 35000503}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: Menu panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2181,6 +2181,8 @@ GameObject:
   - component: {fileID: 207695706}
   - component: {fileID: 207695705}
   - component: {fileID: 207695704}
+  - component: {fileID: 207695707}
+  - component: {fileID: 207695708}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2250,43 +2252,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 207695705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 35000503}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Pause_menu
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 35000501}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1621772578}
-        m_TargetAssemblyTypeName: Loadscene, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &207695705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2325,6 +2291,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207695702}
   m_CullTransparentMesh: 0
+--- !u!61 &207695707
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207695702}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 200, y: 200}
+  m_EdgeRadius: 0
+--- !u!114 &207695708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207695702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 35000501}
+  Gun1: {fileID: 0}
+  Gun2: {fileID: 0}
 --- !u!1 &213621041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,7 +2460,7 @@ GameObject:
   - component: {fileID: 215252380}
   - component: {fileID: 215252379}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text Game over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3403,6 +3413,8 @@ GameObject:
   - component: {fileID: 348525439}
   - component: {fileID: 348525438}
   - component: {fileID: 348525437}
+  - component: {fileID: 348525443}
+  - component: {fileID: 348525442}
   m_Layer: 5
   m_Name: Gun 0
   m_TagString: Untagged
@@ -3422,6 +3434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed6d55cb1339da41a47a47b3ef6f7bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ThisObject: {fileID: 0}
 --- !u!114 &348525438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3464,55 +3477,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 867851319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1586993467}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SelectGun
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 348525437}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonUp
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -150
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1433320863}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonDown
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 895154627}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonDown
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 150
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &348525439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3571,6 +3536,40 @@ RectTransform:
   m_AnchoredPosition: {x: -150, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &348525442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348525436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 0}
+  Gun1: {fileID: 1433320867}
+  Gun2: {fileID: 895154625}
+--- !u!58 &348525443
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348525436}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 50
 --- !u!1 &357981527
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,6 +4541,8 @@ GameObject:
   - component: {fileID: 446484008}
   - component: {fileID: 446484007}
   - component: {fileID: 446484006}
+  - component: {fileID: 446484010}
+  - component: {fileID: 446484009}
   m_Layer: 5
   m_Name: Start game
   m_TagString: Untagged
@@ -4619,31 +4620,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 446484007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1621772576}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: StartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 446484004}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &446484007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4682,6 +4659,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446484004}
   m_CullTransparentMesh: 0
+--- !u!114 &446484009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446484004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 446484004}
+  Gun1: {fileID: 0}
+  Gun2: {fileID: 0}
+--- !u!61 &446484010
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446484004}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 300, y: 170}
+  m_EdgeRadius: 0
 --- !u!1 &447552648
 GameObject:
   m_ObjectHideFlags: 0
@@ -6930,8 +6951,10 @@ GameObject:
   - component: {fileID: 606822293}
   - component: {fileID: 606822292}
   - component: {fileID: 606822291}
+  - component: {fileID: 606822294}
+  - component: {fileID: 606822295}
   m_Layer: 5
-  m_Name: Back
+  m_Name: BackPause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6999,31 +7022,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 606822292}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 35000501}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 35000503}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Pause_menu
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &606822292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7062,6 +7061,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606822289}
   m_CullTransparentMesh: 0
+--- !u!61 &606822294
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606822289}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 200, y: 200}
+  m_EdgeRadius: 0
+--- !u!114 &606822295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606822289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 35000501}
+  Gun1: {fileID: 0}
+  Gun2: {fileID: 0}
 --- !u!1 &608774340
 GameObject:
   m_ObjectHideFlags: 0
@@ -9676,6 +9719,8 @@ GameObject:
   - component: {fileID: 895154628}
   - component: {fileID: 895154627}
   - component: {fileID: 895154626}
+  - component: {fileID: 895154631}
+  - component: {fileID: 895154630}
   m_Layer: 5
   m_Name: Gun 2
   m_TagString: Untagged
@@ -9745,55 +9790,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 665877642}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1586993467}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SelectGun
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 348525437}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonDown
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -150
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1433320863}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonDown
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 895154627}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonUp
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 150
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &895154627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9806,6 +9803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed6d55cb1339da41a47a47b3ef6f7bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ThisObject: {fileID: 0}
 --- !u!114 &895154628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9844,6 +9842,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895154624}
   m_CullTransparentMesh: 0
+--- !u!114 &895154630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895154624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 0}
+  Gun1: {fileID: 348525441}
+  Gun2: {fileID: 1433320867}
+--- !u!58 &895154631
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895154624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 50
 --- !u!1 &896714954
 GameObject:
   m_ObjectHideFlags: 0
@@ -10797,6 +10829,8 @@ GameObject:
   - component: {fileID: 959006506}
   - component: {fileID: 959006505}
   - component: {fileID: 959006504}
+  - component: {fileID: 959006508}
+  - component: {fileID: 959006507}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -10866,43 +10900,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 959006505}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1270228689}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1416843795}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1621772578}
-        m_TargetAssemblyTypeName: Loadscene, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &959006505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10941,6 +10939,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959006502}
   m_CullTransparentMesh: 0
+--- !u!114 &959006507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959006502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 1270228689}
+  Gun1: {fileID: 0}
+  Gun2: {fileID: 0}
+--- !u!61 &959006508
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959006502}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 200, y: 170}
+  m_EdgeRadius: 0
 --- !u!1 &960443034
 GameObject:
   m_ObjectHideFlags: 0
@@ -15980,6 +16022,8 @@ GameObject:
   - component: {fileID: 1416843799}
   - component: {fileID: 1416843798}
   - component: {fileID: 1416843797}
+  - component: {fileID: 1416843800}
+  - component: {fileID: 1416843801}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -16048,31 +16092,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1416843798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 35000501}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 35000503}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Pause_menu
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1416843798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16111,6 +16131,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416843795}
   m_CullTransparentMesh: 0
+--- !u!58 &1416843800
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416843795}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 50
+--- !u!114 &1416843801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416843795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 35000501}
+  Gun1: {fileID: 0}
+  Gun2: {fileID: 0}
 --- !u!1 &1419428316
 GameObject:
   m_ObjectHideFlags: 0
@@ -16424,6 +16478,8 @@ GameObject:
   - component: {fileID: 1433320865}
   - component: {fileID: 1433320864}
   - component: {fileID: 1433320863}
+  - component: {fileID: 1433320869}
+  - component: {fileID: 1433320868}
   m_Layer: 5
   m_Name: Gun 1
   m_TagString: Untagged
@@ -16443,6 +16499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed6d55cb1339da41a47a47b3ef6f7bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ThisObject: {fileID: 0}
 --- !u!114 &1433320864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16485,55 +16542,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 404244567}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1586993467}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SelectGun
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 348525437}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonDown
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -150
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1433320863}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonUp
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 895154627}
-        m_TargetAssemblyTypeName: MoveButtonGun, Assembly-CSharp
-        m_MethodName: MoveButtonDown
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 150
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1433320865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16592,6 +16601,40 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1433320868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433320862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 0}
+  Gun1: {fileID: 348525441}
+  Gun2: {fileID: 895154625}
+--- !u!58 &1433320869
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433320862}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 50
 --- !u!1 &1439399895
 GameObject:
   m_ObjectHideFlags: 0
@@ -22822,7 +22865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5334658, y: 0.023484}
   m_AnchorMax: {x: 0.841, y: 0.28351605}
-  m_AnchoredPosition: {x: -1.1800232, y: 1.7000122}
+  m_AnchoredPosition: {x: -1.1800232, y: 1.6999512}
   m_SizeDelta: {x: 1.4796143, y: -3.6853638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1525912847
@@ -22839,7 +22882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -23414,6 +23457,8 @@ GameObject:
   - component: {fileID: 1544787794}
   - component: {fileID: 1544787793}
   - component: {fileID: 1544787792}
+  - component: {fileID: 1544787796}
+  - component: {fileID: 1544787795}
   m_Layer: 5
   m_Name: Button next
   m_TagString: Untagged
@@ -23482,19 +23527,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1544787793}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1621772576}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Next_Move_Bot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1544787793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23533,6 +23566,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544787790}
   m_CullTransparentMesh: 0
+--- !u!114 &1544787795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544787790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 0}
+  Gun1: {fileID: 0}
+  Gun2: {fileID: 0}
+--- !u!58 &1544787796
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544787790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 50
 --- !u!1 &1548539134
 GameObject:
   m_ObjectHideFlags: 0
@@ -23889,7 +23956,6 @@ GameObject:
   - component: {fileID: 1586993466}
   - component: {fileID: 1586993465}
   - component: {fileID: 1586993462}
-  - component: {fileID: 1586993467}
   - component: {fileID: 1586993468}
   - component: {fileID: 1586993463}
   m_Layer: 0
@@ -23911,8 +23977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3496d5fd8feee445938aee0e85af052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Charactar: 0
-  Arrow: {fileID: 741878920}
   GroundCheck: {fileID: 110608602}
   GroundLayer:
     serializedVersion: 2
@@ -23941,7 +24005,8 @@ MonoBehaviour:
   - {r: 0.7843138, g: 0.007843138, b: 0.43921572, a: 1}
   - {r: 0.019607844, g: 0.5176471, b: 0.8470589, a: 1}
   - {r: 0.43529415, g: 0.03529412, b: 0.76470596, a: 1}
-  CharSprite: {fileID: 1834470975}
+  Arrow: {fileID: 741878920}
+  CharSprite: {fileID: 1834470977}
   Arm:
   - {fileID: 1883451038}
   - {fileID: 30676871}
@@ -23951,6 +24016,7 @@ MonoBehaviour:
   - {fileID: 99788766}
   Portrait: {fileID: 1548539136}
   SpeedMove: 3
+  PosCharactar: 0
 --- !u!95 &1586993463
 Animator:
   serializedVersion: 3
@@ -24030,18 +24096,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1586993467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586993461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f0cb27b229359499394142ee666229, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1586993468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24622,17 +24676,17 @@ MonoBehaviour:
   - {fileID: 1885101532}
   - {fileID: 1196801321}
   - {fileID: 1275893025}
-  PosHealthScaleBots:
-  - {x: -90, y: 30}
-  - {x: 95, y: 30}
-  - {x: -90, y: -30}
-  - {x: 95, y: -30}
   Places:
   - {fileID: 1927860616}
   - {fileID: 362634859}
   - {fileID: 929783026}
   - {fileID: 213944574}
   - {fileID: 435955424}
+  PosHealthScaleBots:
+  - {x: -90, y: 30}
+  - {x: 95, y: 30}
+  - {x: -90, y: -30}
+  - {x: 95, y: -30}
   Name: {fileID: 612186215}
   Timer: {fileID: 1086450491}
   seconds: 30
@@ -30535,7 +30589,7 @@ GameObject:
   - component: {fileID: 1745467738}
   - component: {fileID: 1745467737}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Main text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36208,6 +36262,8 @@ GameObject:
   - component: {fileID: 2086133250}
   - component: {fileID: 2086133249}
   - component: {fileID: 2086133252}
+  - component: {fileID: 2086133254}
+  - component: {fileID: 2086133253}
   m_Layer: 5
   m_Name: Show ad
   m_TagString: Untagged
@@ -36278,19 +36334,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2086133250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1621772580}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: UserOptToWatchAd
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2086133250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36341,6 +36385,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a656880bf66b447aea2366f769c625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2086133253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086133247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 0}
+  Gun1: {fileID: 0}
+  Gun2: {fileID: 0}
+--- !u!61 &2086133254
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086133247}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 200, y: 170}
+  m_EdgeRadius: 0
 --- !u!1 &2093558957
 GameObject:
   m_ObjectHideFlags: 0
@@ -36390,6 +36478,8 @@ GameObject:
   - component: {fileID: 2096156792}
   - component: {fileID: 2096156791}
   - component: {fileID: 2096156790}
+  - component: {fileID: 2096156793}
+  - component: {fileID: 2096156794}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -36459,43 +36549,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2096156791}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2137017252}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1416843795}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1621772578}
-        m_TargetAssemblyTypeName: Loadscene, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2096156791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36534,6 +36588,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096156788}
   m_CullTransparentMesh: 0
+--- !u!61 &2096156793
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096156788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 300, y: 180}
+  m_EdgeRadius: 0
+--- !u!114 &2096156794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096156788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56953716b3e9ea4099a74b2b523fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentSpriteChar: {fileID: 0}
+  InputFieldName: {fileID: 0}
+  DropdownLabel: {fileID: 0}
+  MenuPanel: {fileID: 2137017252}
+  Gun1: {fileID: 0}
+  Gun2: {fileID: 0}
 --- !u!1 &2120972754
 GameObject:
   m_ObjectHideFlags: 0

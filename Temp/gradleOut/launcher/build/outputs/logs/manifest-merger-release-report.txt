@@ -1,0 +1,334 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+MERGED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:3:1-60:12
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\43a209a1574b998fc4c3256029348641\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a7f62cef6f2580716be1fbc0bf2d19f1\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.browser.browser-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\8ced82e256bcaf8882f64cabe66fcdcd\androidx.browser.browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\25a86418cd5f5fb0e0fa98b4559da7df\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.core.core-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9a7d438e88041c1bf0d7f0a73a5c22b\androidx.core.core-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\844e6d8d110901814b6cf2c0e58db777\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\457b24bb365487f19b919b9304bfe494\androidx.customview.customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\1e19b627048259720a9293cff54eca4b\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\9618e4771644af83034a677d1455ee67\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\1653319b2d58e30ed9313b0c2df5947e\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\5ca262859c3133a4aa973ae959ce2061\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\13f6a8a8ac08da7eb6eca2e6990d51f4\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\be7a7dfb68705840901dbd39fdfd186a\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\ce24e7fa4f5089420697906de566d165\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\31884234bbfc18c9669057802122ca0d\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\caea093eaa3f4ab10bb21ae1108e4fce\androidx.loader.loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\androidx.print.print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\041bb1c3a0dbc07996e40bbb615a03fc\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\6aba77ce87b62d8347ca6f06e6145185\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\058e31eaf44c56365f3b30c5b91c8134\androidx.versionedparcelable.versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-ads-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\fec4bb0e3f0657ee8d210f4df9eab8ef\com.google.android.gms.play-services-ads-19.3.0\AndroidManifest.xml:17:1-25:12
+MERGED from [:com.google.android.gms.play-services-ads-base-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a4b9448fd236f6e59cd8329aafabe06a\com.google.android.gms.play-services-ads-base-19.3.0\AndroidManifest.xml:2:1-9:12
+MERGED from [:com.google.android.gms.play-services-ads-identifier-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f4aa3bb22de53475251f389e7c50f8ac\com.google.android.gms.play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:com.google.android.gms.play-services-basement-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\2fabb30335504ebb11c3fa77eec525c6\com.google.android.gms.play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [:com.google.android.gms.play-services-gass-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\7fdf8db73b38ef6584721c5a2d366292\com.google.android.gms.play-services-gass-19.3.0\AndroidManifest.xml:2:1-9:12
+MERGED from [:com.google.android.gms.play-services-measurement-base-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f76d0fb5a451adb1023b097aa7aa5b4b\com.google.android.gms.play-services-measurement-base-17.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:com.google.android.gms.play-services-tasks-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\b8ce0a3bccc127c1708e05b85b981548\com.google.android.gms.play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [:googlemobileads-unity:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\6d75734eedf30d0f1afd574ee7f7a34d\googlemobileads-unity\AndroidManifest.xml:7:1-18:12
+MERGED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+	package
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:70-112
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:113-159
+	android:versionCode
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:1-6:12
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:11-69
+	android:installLocation
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:3:160-200
+supports-screens
+ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:4:3-163
+	android:largeScreens
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:4:78-105
+	android:smallScreens
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:4:21-48
+	android:normalScreens
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:4:49-77
+	android:xlargeScreens
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:4:106-134
+	android:anyDensity
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:4:135-160
+application
+ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:3-116
+MERGED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:5-58:19
+MERGED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:5-58:19
+MERGED from [:androidx.core.core-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9a7d438e88041c1bf0d7f0a73a5c22b\androidx.core.core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [:androidx.core.core-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9a7d438e88041c1bf0d7f0a73a5c22b\androidx.core.core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\058e31eaf44c56365f3b30c5b91c8134\androidx.versionedparcelable.versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\058e31eaf44c56365f3b30c5b91c8134\androidx.versionedparcelable.versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [:com.google.android.gms.play-services-ads-base-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a4b9448fd236f6e59cd8329aafabe06a\com.google.android.gms.play-services-ads-base-19.3.0\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.android.gms.play-services-ads-base-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a4b9448fd236f6e59cd8329aafabe06a\com.google.android.gms.play-services-ads-base-19.3.0\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.android.gms.play-services-ads-identifier-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f4aa3bb22de53475251f389e7c50f8ac\com.google.android.gms.play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [:com.google.android.gms.play-services-ads-identifier-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f4aa3bb22de53475251f389e7c50f8ac\com.google.android.gms.play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:22:3-26:17
+MERGED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:22:3-26:17
+MERGED from [:com.google.android.gms.play-services-basement-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\2fabb30335504ebb11c3fa77eec525c6\com.google.android.gms.play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.google.android.gms.play-services-basement-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\2fabb30335504ebb11c3fa77eec525c6\com.google.android.gms.play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.google.android.gms.play-services-gass-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\7fdf8db73b38ef6584721c5a2d366292\com.google.android.gms.play-services-gass-19.3.0\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.android.gms.play-services-gass-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\7fdf8db73b38ef6584721c5a2d366292\com.google.android.gms.play-services-gass-19.3.0\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.android.gms.play-services-measurement-base-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f76d0fb5a451adb1023b097aa7aa5b4b\com.google.android.gms.play-services-measurement-base-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.android.gms.play-services-measurement-base-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f76d0fb5a451adb1023b097aa7aa5b4b\com.google.android.gms.play-services-measurement-base-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.android.gms.play-services-tasks-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\b8ce0a3bccc127c1708e05b85b981548\com.google.android.gms.play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.android.gms.play-services-tasks-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\b8ce0a3bccc127c1708e05b85b981548\com.google.android.gms.play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:9:5-17:19
+MERGED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:9:5-17:19
+	android:extractNativeLibs
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:16-48
+	android:appComponentFactory
+		ADDED from [:androidx.core.core-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9a7d438e88041c1bf0d7f0a73a5c22b\androidx.core.core-1.0.0\AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:49-81
+	android:icon
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:82-113
+uses-sdk
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+MERGED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:9:5-11:41
+MERGED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:9:5-11:41
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\43a209a1574b998fc4c3256029348641\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\43a209a1574b998fc4c3256029348641\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a7f62cef6f2580716be1fbc0bf2d19f1\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a7f62cef6f2580716be1fbc0bf2d19f1\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.browser.browser-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\8ced82e256bcaf8882f64cabe66fcdcd\androidx.browser.browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.browser.browser-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\8ced82e256bcaf8882f64cabe66fcdcd\androidx.browser.browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\25a86418cd5f5fb0e0fa98b4559da7df\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\25a86418cd5f5fb0e0fa98b4559da7df\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.core.core-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9a7d438e88041c1bf0d7f0a73a5c22b\androidx.core.core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.core.core-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9a7d438e88041c1bf0d7f0a73a5c22b\androidx.core.core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\844e6d8d110901814b6cf2c0e58db777\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\844e6d8d110901814b6cf2c0e58db777\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\457b24bb365487f19b919b9304bfe494\androidx.customview.customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\457b24bb365487f19b919b9304bfe494\androidx.customview.customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\1e19b627048259720a9293cff54eca4b\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\1e19b627048259720a9293cff54eca4b\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\9618e4771644af83034a677d1455ee67\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\9618e4771644af83034a677d1455ee67\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\1653319b2d58e30ed9313b0c2df5947e\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\1653319b2d58e30ed9313b0c2df5947e\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\5ca262859c3133a4aa973ae959ce2061\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\5ca262859c3133a4aa973ae959ce2061\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\13f6a8a8ac08da7eb6eca2e6990d51f4\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\13f6a8a8ac08da7eb6eca2e6990d51f4\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\be7a7dfb68705840901dbd39fdfd186a\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\be7a7dfb68705840901dbd39fdfd186a\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\ce24e7fa4f5089420697906de566d165\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\ce24e7fa4f5089420697906de566d165\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\31884234bbfc18c9669057802122ca0d\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\31884234bbfc18c9669057802122ca0d\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\caea093eaa3f4ab10bb21ae1108e4fce\androidx.loader.loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\caea093eaa3f4ab10bb21ae1108e4fce\androidx.loader.loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\androidx.print.print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\androidx.print.print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\041bb1c3a0dbc07996e40bbb615a03fc\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\041bb1c3a0dbc07996e40bbb615a03fc\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\6aba77ce87b62d8347ca6f06e6145185\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\6aba77ce87b62d8347ca6f06e6145185\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\058e31eaf44c56365f3b30c5b91c8134\androidx.versionedparcelable.versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\058e31eaf44c56365f3b30c5b91c8134\androidx.versionedparcelable.versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-ads-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\fec4bb0e3f0657ee8d210f4df9eab8ef\com.google.android.gms.play-services-ads-19.3.0\AndroidManifest.xml:21:5-23:52
+MERGED from [:com.google.android.gms.play-services-ads-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\fec4bb0e3f0657ee8d210f4df9eab8ef\com.google.android.gms.play-services-ads-19.3.0\AndroidManifest.xml:21:5-23:52
+MERGED from [:com.google.android.gms.play-services-ads-base-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a4b9448fd236f6e59cd8329aafabe06a\com.google.android.gms.play-services-ads-base-19.3.0\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-ads-base-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\a4b9448fd236f6e59cd8329aafabe06a\com.google.android.gms.play-services-ads-base-19.3.0\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-ads-identifier-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f4aa3bb22de53475251f389e7c50f8ac\com.google.android.gms.play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-ads-identifier-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f4aa3bb22de53475251f389e7c50f8ac\com.google.android.gms.play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:18:3-42
+MERGED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:18:3-42
+MERGED from [:com.google.android.gms.play-services-basement-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\2fabb30335504ebb11c3fa77eec525c6\com.google.android.gms.play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-basement-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\2fabb30335504ebb11c3fa77eec525c6\com.google.android.gms.play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-gass-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\7fdf8db73b38ef6584721c5a2d366292\com.google.android.gms.play-services-gass-19.3.0\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-gass-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\7fdf8db73b38ef6584721c5a2d366292\com.google.android.gms.play-services-gass-19.3.0\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-measurement-base-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f76d0fb5a451adb1023b097aa7aa5b4b\com.google.android.gms.play-services-measurement-base-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-measurement-base-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f76d0fb5a451adb1023b097aa7aa5b4b\com.google.android.gms.play-services-measurement-base-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-tasks-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\b8ce0a3bccc127c1708e05b85b981548\com.google.android.gms.play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-tasks-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\b8ce0a3bccc127c1708e05b85b981548\com.google.android.gms.play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [:googlemobileads-unity:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\6d75734eedf30d0f1afd574ee7f7a34d\googlemobileads-unity\AndroidManifest.xml:12:5-14:41
+MERGED from [:googlemobileads-unity:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\6d75734eedf30d0f1afd574ee7f7a34d\googlemobileads-unity\AndroidManifest.xml:12:5-14:41
+MERGED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-47
+MERGED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-47
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:com.google.android.gms.play-services-ads-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\fec4bb0e3f0657ee8d210f4df9eab8ef\com.google.android.gms.play-services-ads-19.3.0\AndroidManifest.xml:23:9-49
+	android:targetSdkVersion
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+		ADDED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+		MERGED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+		INJECTED from D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\launcher\src\main\AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-54
+	android:glEsVersion
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:13:19-51
+uses-feature#android.hardware.touchscreen
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:5-19:36
+	android:required
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:20:5-22:36
+	android:required
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:22:9-33
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:9-72
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:25:9-44:20
+	android:screenOrientation
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:13-50
+	android:launchMode
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-44
+	android:hardwareAccelerated
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-48
+	android:configChanges
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:13-194
+	android:theme
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:13-54
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:13-66
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:27-74
+meta-data#unityplayer.UnityActivity
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:13-40:40
+	android:value
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:40:17-37
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:17-57
+meta-data#android.notch_support
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:41:13-43:40
+	android:value
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:17-37
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:17-53
+meta-data#unity.splash-mode
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:9-48:33
+	android:value
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:48:13-30
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:13-45
+meta-data#unity.splash-enable
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:9-51:36
+	android:value
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-33
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:13-47
+meta-data#notch.config
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:9-54:50
+	android:value
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:13-47
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:13-40
+meta-data#unity.build-id
+ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:9-57:68
+	android:value
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:13-65
+	android:name
+		ADDED from [:unityLibrary] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:13-42
+uses-permission#android.permission.INTERNET
+ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:20:3-65
+MERGED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:23:5-67
+MERGED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:23:5-67
+MERGED from [:googlemobileads-unity:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\6d75734eedf30d0f1afd574ee7f7a34d\googlemobileads-unity\AndroidManifest.xml:16:5-67
+MERGED from [:googlemobileads-unity:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\6d75734eedf30d0f1afd574ee7f7a34d\googlemobileads-unity\AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:20:20-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:21:3-77
+MERGED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:24:5-79
+MERGED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:21:20-74
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:24:5-254
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:24:178-202
+	android:configChanges
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:24:68-177
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:24:203-251
+	android:name
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:24:15-67
+provider#com.google.android.gms.ads.MobileAdsInitProvider
+ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:25:5-207
+	android:authorities
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:25:79-155
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:25:156-180
+	android:initOrder
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:25:181-204
+	android:name
+		ADDED from [:com.google.android.gms.play-services-ads-lite-19.3.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\30d6fddc095795acfe09709d80e772d9\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml:25:15-78
+meta-data#com.google.android.gms.version
+ADDED from [:com.google.android.gms.play-services-basement-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\2fabb30335504ebb11c3fa77eec525c6\com.google.android.gms.play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [:com.google.android.gms.play-services-basement-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\2fabb30335504ebb11c3fa77eec525c6\com.google.android.gms.play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [:com.google.android.gms.play-services-basement-17.0.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\2fabb30335504ebb11c3fa77eec525c6\com.google.android.gms.play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [:com.google.android.gms.play-services-measurement-sdk-api-17.1.0:] C:\Users\mamont\.gradle\caches\transforms-2\files-2.1\f9f2d2332d649c39c3f73d7b60940638\com.google.android.gms.play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:25:22-65
+uses-library#org.apache.http.legacy
+ADDED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:10:9-12:40
+	android:required
+		ADDED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:11:13-50
+meta-data#com.google.android.gms.ads.AD_MANAGER_APP
+ADDED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-16:36
+	android:value
+		ADDED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-33
+	android:name
+		ADDED from [:unityLibrary:GoogleMobileAdsPlugin.androidlib] D:\Game dev\MyWorms\BalloonBattle\Temp\gradleOut\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-69

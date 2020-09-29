@@ -19,6 +19,7 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
     public Image joystickBG, joystick;
 
     private Vector2 inputVector;
+    private Vector2 pos;
 
     public static bool isFlagforGun_0, isFlagforGun_3, isAiming, isActionPlayer;
 
@@ -33,7 +34,6 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
 
     public void OnDrag(PointerEventData eventData)
     {
-
         MoveChar.isGun = true;
 
         if(NumberGun == 0 && !isAiming && MoveChar.timerClick <= 0 && isActionPlayer)
@@ -41,7 +41,7 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
             isAiming = true;
             PowerBar.fillAmount = 0;
             Bullet.moveSpeed = 5;
-            StartCoroutine(PowerGun_0());
+            StartCoroutine(Gun0());
         }
 
         if (NumberGun == 1 && !isAiming && MoveChar.timerClick <= 0 && isActionPlayer)
@@ -49,12 +49,12 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
             isAiming = true;
             PowerBar.fillAmount = 1;
             Bullet.moveSpeed = 7;
-            StartCoroutine(PowerGun_1());
+            StartCoroutine(Gun1());
         }
         if (NumberGun == 2 && !isAiming && MoveChar.timerClick <= 0 && isActionPlayer)
         {
             isAiming = true;
-            StartCoroutine(PowerGun_2());
+            StartCoroutine(Gun2());
         }
         if(!isActionPlayer && !Healths.isGameOver)
         {
@@ -62,7 +62,6 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
             MassegeNoBullet.GetComponent<Animation>().Play("MassegeNoBullet");
         }
 
-        Vector2 pos;
         if(RectTransformUtility.ScreenPointToLocalPointInRectangle(joystickBG.rectTransform,eventData.position,eventData.pressEventCamera,out pos))
         {
             inputVector = new Vector2(pos.x, pos.y);
@@ -114,7 +113,7 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
         MoveChar.timerMove = 1.5f;
     }
 
-    public void Delay()
+    public void Delay() // задержка после стрельбы
     {
         isFlagforGun_0 = false;
         isFlagforGun_3 = false;
@@ -136,7 +135,7 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
         if(NumberGun != 2) { Bar.SetActive(BarActiv); }       
     }
 
-    IEnumerator PowerGun_0()
+    IEnumerator Gun0()
     {
         yield return new WaitForSeconds(0.2f);
         {
@@ -158,7 +157,7 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
         }
     }
 
-    IEnumerator PowerGun_1()
+    IEnumerator Gun1()
     {
         yield return new WaitForSeconds(0.5f);
         {
@@ -183,7 +182,7 @@ public class Aiming : MonoBehaviour, IDragHandler, IPointerDownHandler,IPointerU
         }      
     }
 
-    IEnumerator PowerGun_2()
+    IEnumerator Gun2()
     {
         yield return new WaitForSeconds(0.5f);
         {

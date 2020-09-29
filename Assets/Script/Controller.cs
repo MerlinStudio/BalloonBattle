@@ -6,29 +6,23 @@ public class Controller : MonoBehaviour
 {
     public static Controller instance = null;
 
-    public static bool GamePlayer;
-    public static bool NextMovePlayer;
-    public GameObject MessegeNextMoveBot;
-    public GameObject MessegeNextMovePlayer;
-    public GameObject PlayerPanel;
-    public GameObject YouWin;
+    public GameObject MessegeNextMoveBot, MessegeNextMovePlayer, PlayerPanel, YouWin, Player;
 
-    public GameObject Player;
     public GameObject[] Bots;
     public GameObject[] HealthScaleBots;
-    public Vector2[] PosHealthScaleBots;
     public GameObject[] Places;
+    public Vector2[] PosHealthScaleBots;
 
     public Text Name;
-
-    private int SelectBot;
-    public static int NumberBots;
-    public static int PlayerBalloon;
-
     public Text Timer;
-    public static bool TimerStart;
+
+    public static int NumberBots, PlayerBalloon;
+    public static bool GamePlayer, NextMovePlayer, TimerStart;
+
     public float seconds;
 
+    private int SelectBot;
+    private Text Text;
     void Awake()
     {
         if(instance == null) { instance = this; }
@@ -38,6 +32,14 @@ public class Controller : MonoBehaviour
         //Name.text = SaveJson.instance.save.Name;
         NumberBots = 1;
         PlayerBalloon = 2;
+
+        Text = Timer.GetComponent<Text>();
+
+        //for (int i = 0; i < HealthScaleBots.Length; i++)
+        //{
+        //    Transforms[i] = HealthScaleBots[i].GetComponent<RectTransform>();
+        //    IBot[i] = Bots[i].GetComponent<AIBot>();
+        //}
 
         SelectBot = -1;
         GamePlayer = true;
@@ -53,18 +55,18 @@ public class Controller : MonoBehaviour
         }
         Player.transform.position = Places[0].transform.position;   //место появления игрока
 
-        for (int i = 0; i < Bots.Length; i++)  //перемешиваем массив ботов
+        for (int i = 0; i < Bots.Length; i++)  //перемешиваем всех ботов 
         {
             if(i != PlayerBalloon)
             {
                 int j = UnityEngine.Random.Range(0, 7);
-                if(j != PlayerBalloon)
+                if(j != PlayerBalloon)  //боты
                 {
                     var temp = Bots[j];
                     Bots[j] = Bots[i];
                     Bots[i] = temp;
                 }
-                if (j != PlayerBalloon)
+                if (j != PlayerBalloon) //их FillAmount
                 {
                     var temp = HealthScaleBots[j];
                     HealthScaleBots[j] = HealthScaleBots[i];
@@ -99,19 +101,19 @@ public class Controller : MonoBehaviour
         if (!TimerStart)
         {
             seconds = 30f;
-            Timer.GetComponent<Text>().color = new Color(87, 69, 50, 255);
-            Time_Snap(seconds);
+            Text.color = new Color(87, 69, 50, 255);
+            TimeSnap(seconds);
         }
 
         if (TimerStart == true && !Healths.isGameOver)
         {
             seconds -= 1 * Time.deltaTime;
 
-            Time_Snap(seconds);
+            TimeSnap(seconds);
 
             if (seconds <= 10)
             {
-                Timer.GetComponent<Text>().color = new Color(1, 0, 0);
+                Text.color = new Color(1, 0, 0);
             }
 
             if (seconds <= 0)
@@ -119,15 +121,15 @@ public class Controller : MonoBehaviour
                 seconds = 0;
                 if(!GamePlayer)
                 {
-                    AIBot.instance.Delay_End();
+                    AIBot.instance.DelayEnd();
                     Bots[SelectBot].GetComponent<AIBot>().enabled = false;
-                    Next_Move_Player();
+                    NextMovePlayerNow();
                 }
                 else
                 {
                     MoveChar.isControllChar = false;
                     Aiming.instance.Delay();
-                    Next_Move_Bot();
+                    NextMoveBot();
                 }
                 TimerStart = false;
             }
@@ -135,7 +137,7 @@ public class Controller : MonoBehaviour
 
         if (NextMovePlayer == true)
         {
-            Next_Move_Player();
+            NextMovePlayerNow();
             NextMovePlayer = false;
         }
     }
@@ -144,12 +146,12 @@ public class Controller : MonoBehaviour
         NextMovePlayer = true;
     }
 
-    private void Time_Snap(float seconds)
+    private void TimeSnap(float seconds)
     {
         TimeSpan timer = TimeSpan.FromSeconds(seconds);
         Timer.text = timer.ToString(@"ss\:ff");
     }
-    public void Next_Move_Bot()
+    public void NextMoveBot()
     {
         TimerStart = false;
         SelectBot++;
@@ -159,37 +161,36 @@ public class Controller : MonoBehaviour
         }
         if (!Bots[SelectBot].activeSelf)
         {
-            Next_Move_Bot();
+            NextMoveBot();
         }
         Bots[SelectBot].GetComponent<AIBot>().enabled = true;
 
         PlayerPanel.SetActive(false);
         MessegeNextMoveBot.SetActive(true);
-        MessegeNextMoveBot.GetComponent<Animation>().Play("Messege_Next_Move");
-        Invoke("Delay_Next_Move_bot", 1f);
+        MessegeNextMoveBot.GetComponent<Animation>().Play("MessegeNextMove");
+        Invoke("DelayNextMovebot", 1f);
     }
 
-    private void Delay_Next_Move_bot()
+    private void DelayNextMovebot() // вызов с инвока
     {
-        HealthScaleBots[SelectBot].GetComponent<Animation>().Play("Health scale");
+        HealthScaleBots[SelectBot].GetComponent<Animation>().Play("HealthScale");
         MessegeNextMoveBot.SetActive(false);
         TimerStart = true;
         GamePlayer = false;
     }
 
-    public void Next_Move_Player()
+    public void NextMovePlayerNow()
     {
         MoveChar.timerClick = 0.2f;
         MessegeNextMovePlayer.SetActive(true);
-        MessegeNextMovePlayer.GetComponent<Animation>().Play("Messege_Next_Move");
+        MessegeNextMovePlayer.GetComponent<Animation>().Play("MessegeNextMove");
         if(SelectBot != -1) { HealthScaleBots[SelectBot].GetComponent<Transform>().localScale = new Vector2(1, 1); }   
                
-        Invoke("Delay_Next_Move_Player", 1f);
+        Invoke("DelayNextMovePlayer", 1f);
     }
 
-    private void Delay_Next_Move_Player()
+    private void DelayNextMovePlayer() // вызов с инвока
     {
-        Healths.isGameOver = false;
         TimerStart = true;
         Aiming.isFlagforGun_0 = true;
         MoveChar.timerMove = 1.5f;
