@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Aiming
     - Bullet
     - Controller
+    - Destruction
     - Healths
     - JumpBot
     - Loadscene
@@ -140,13 +141,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
-    - Class: 60
-      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 62
-      Script: {instanceID: 0}
-    - Class: 68
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -155,8 +152,6 @@ ScriptsOnlyBuild:
     - Class: 95
       Script: {instanceID: 0}
     - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
       Script: {instanceID: 0}
     - Class: 111
       Script: {instanceID: 0}
@@ -207,11 +202,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14852}
     - Class: 114
-      Script: {instanceID: 17524}
+      Script: {instanceID: 18278}
     - Class: 114
-      Script: {instanceID: 17568}
+      Script: {instanceID: 18312}
     - Class: 114
-      Script: {instanceID: 17620}
+      Script: {instanceID: 76844}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -219,10 +214,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -233,6 +224,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 331
       Script: {instanceID: 0}
     - Class: 1971053207
       Script: {instanceID: 0}
@@ -783,8 +776,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Destruction
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Scene_1.unity
-  playerPath: D:/Game dev/MyWorms/Balloon Battle v4.apk
+  playerPath: D:/Game dev/MyWorms/Balloon Battle v5.apk

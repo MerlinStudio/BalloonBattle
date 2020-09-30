@@ -42,7 +42,8 @@ public class Controller : MonoBehaviour
         //}
 
         SelectBot = -1;
-        GamePlayer = true;
+        Healths.isGameOver = false;
+        GamePlayer = false;
         TimerStart = false;
         PlayerPanel.SetActive(false);
 
@@ -191,13 +192,13 @@ public class Controller : MonoBehaviour
 
     private void DelayNextMovePlayer() // вызов с инвока
     {
-        TimerStart = true;
         Aiming.isFlagforGun_0 = true;
         MoveChar.timerMove = 1.5f;
-        PlayerPanel.SetActive(true);
-        MessegeNextMovePlayer.SetActive(false);
         MoveChar.isControllChar = true;
         Aiming.isActionPlayer = true;
+        PlayerPanel.SetActive(true);
+        MessegeNextMovePlayer.SetActive(false);
+        TimerStart = true;
         GamePlayer = true;
     }
 }

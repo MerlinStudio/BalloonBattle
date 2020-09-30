@@ -137,6 +137,7 @@ public class AIBot : MonoBehaviour
                 }
                 else
                 {
+                    ControllJump(false, false);
                     SelectGun();
                     Aiminig();
                 }
@@ -160,11 +161,12 @@ public class AIBot : MonoBehaviour
                 }
                 else
                 {
+                    ControllJump(false, false);
                     SelectGun();
                     Aiminig();
                 }
             }
-        }
+        } 
     }
     private void CheckDirectionDistanceChar()    //когда пришли проверяем дистанцию до игрока
     {
@@ -172,7 +174,6 @@ public class AIBot : MonoBehaviour
         Bot = PositionBot.position;
         float _distance = Bot.x - Charactar.x;
         valueY = Bot.y - Charactar.y;
-
         if (_distance > 0)
         {
             isCharRight = false;
@@ -220,7 +221,6 @@ public class AIBot : MonoBehaviour
     }
     private void Aiminig()  //прицеливаемся
     {
-        ControllJump(false, false);
         BotAiminig = true;
 
         if (isCharRight) { SpriteRenderer.flipX = true; }
@@ -236,16 +236,16 @@ public class AIBot : MonoBehaviour
             }
             else
             {
-
-                if (valueY > 1 && distance <= 15)    // бот выш игрока
+                float temporaryValueY = valueY;
+                if (temporaryValueY > 1 && distance <= 15)    // бот выш игрока
                 {
-                    valueY *= 3 * (-1);
+                    temporaryValueY *= 3 * (-1);
                 }
-                if (valueY < -1 && distance <= 15)  // бот ниже игрока
+                if (temporaryValueY < -1 && distance <= 15)  // бот ниже игрока
                 {
-                    valueY *= 2.5f;
+                    temporaryValueY *= 2.5f;
                 }
-                angle = 65f - (distance - 7) /*+ add*/ + valueY;
+                angle = 65f - (distance - 7) /*+ add*/ + temporaryValueY;
             }
 
             if (!isCharRight)
@@ -276,11 +276,11 @@ public class AIBot : MonoBehaviour
     }
     IEnumerator FireGun0()    //логика стрельбы 0го оружия
     {
-        Cloud.SetActive(true);
-        int wait = UnityEngine.Random.Range(1, 3);
+        //Cloud.SetActive(true);
+        //int wait = UnityEngine.Random.Range(1, 3);
 
-        yield return new WaitForSeconds(wait);
-        Cloud.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        //Cloud.SetActive(false);
         Gun[NumberGun].SetActive(true);
 
         yield return new WaitForSeconds(1f);
@@ -294,11 +294,11 @@ public class AIBot : MonoBehaviour
     IEnumerator FireGun1()    //логика стрельбы 1го оружия
     {
         float Power = 1;
-        Cloud.SetActive(true);
-        int wait = UnityEngine.Random.Range(1, 3);
+        //Cloud.SetActive(true);
+        //int wait = UnityEngine.Random.Range(1, 3);
 
-        yield return new WaitForSeconds(wait);
-        Cloud.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        //Cloud.SetActive(false);
         Gun[NumberGun].SetActive(true);
         yield return new WaitForSeconds(1f);
         while (Power >= 0)
@@ -306,7 +306,7 @@ public class AIBot : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             {
                 float power = UnityEngine.Random.Range(8, 12);
-                Bullet.moveSpeed = power - (15 - distance)/2 + (valueY/5 * (-1)+2);
+                Bullet.moveSpeed = power - (15 - distance)/3 - valueY/5;
                 Instantiate(PrefabBullet[NumberGun], ShootPostion[NumberGun].position, ShootPostion[NumberGun].rotation);
                 Power -= 1f / 30;
             }
@@ -315,13 +315,13 @@ public class AIBot : MonoBehaviour
     }   
     IEnumerator FireGun2()    //логика стрельбы 2го оружия
     {
-        Cloud.SetActive(true);
-        int wait = UnityEngine.Random.Range(1, 3);
+        //Cloud.SetActive(true);
+        //int wait = UnityEngine.Random.Range(1, 3);
 
-        yield return new WaitForSeconds(wait);
-        Cloud.SetActive(false);
+        //yield return new WaitForSeconds(wait);
+        //Cloud.SetActive(false);
         Gun[NumberGun].SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
 
         if (!isCharRight)
         {

@@ -13,11 +13,15 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D Rigidbody2D;
     private Animation Animation;
 
+    private bool MaskBoom;
+
     void Start ()
     {      
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animation = GetComponent<Animation>();
         Rigidbody2D.AddForce (transform.right * moveSpeed, ForceMode2D.Impulse);
+
+        MaskBoom = true;
 
         if (Controller.GamePlayer)
         {
@@ -37,12 +41,16 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if ((collision.tag == "Ground" || collision.tag == "Player") && numberGun == 0)
         {
             AfterShot(0.5f);
             Animation.Play("Boom");
-            //Instantiate(MaskBOOM, gameObject.transform.position, gameObject.transform.rotation);
+            if(MaskBoom == true)
+            {
+                Instantiate(MaskBOOM, gameObject.transform.position, gameObject.transform.rotation);
+                MaskBoom = false;
+            }
+            
         }
 
         if (collision.tag == "Ground" && numberGun == 1)

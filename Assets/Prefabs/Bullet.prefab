@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletSprite: {fileID: 21300000, guid: 5caf5913b83d43148951458680333adc, type: 3}
-  MaskBOOM: {fileID: 4869470570051206694, guid: 1762e6966be7d1a40b900e084055b980,
+  MaskBOOM: {fileID: 6876861331899284749, guid: 5a508fb669e787a458c793d298f330b5,
     type: 3}
 --- !u!50 &4964122222420144460
 Rigidbody2D:
@@ -154,4 +154,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 1.1

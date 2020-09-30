@@ -69,6 +69,7 @@
     <Compile Include="Assets\Script\Aiming.cs" />
     <Compile Include="Assets\Script\RotateGun.cs" />
     <Compile Include="Assets\Script\MoveChar.cs" />
+    <Compile Include="Assets\Script\Destruction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

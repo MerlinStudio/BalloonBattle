@@ -90,7 +90,7 @@ public class MoveChar : MonoBehaviour
             }
         }
         if (isGun) { point.x = PosCharactar; }
-        if (!isMove && isGrounded && !Aiming.isAiming) {SpriteRenderer.sprite = BalloonStay[Controller.PlayerBalloon];}
+        if (!isMove && isGrounded && !Aiming.isAiming && !Aiming.isFlagforGun_3) {SpriteRenderer.sprite = BalloonStay[Controller.PlayerBalloon];}
         if (!Controller.GamePlayer) { isMove = false; }
         if (isMove)
         {
