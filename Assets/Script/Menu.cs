@@ -1,97 +1,60 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using UnityEngine.EventSystems;
 
-public class Menu : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class Menu : MonoBehaviour
 {
+    public Button slideLeft, slideRight, startInMenu, Gun0, Gun1, Gun2, pause, backPause, nextMove, startGame, showAd, menuInPause, menuInWon, menuInGameOver;
+    [Space]
     [SerializeField] private RectTransform ContentSpriteChar;
     [SerializeField] private Text InputFieldName, DropdownLabel;
-    [SerializeField] private GameObject MenuPanel;
-    [SerializeField] private RectTransform Gun1, Gun2;
-    private RectTransform GameObject;
+    [SerializeField] private GameObject MenuPause, MenuWon, MenuGameOver, StartPanel;
+    private RectTransform RectTransformGun0, RectTransformGun1, RectTransformGun2;
 
     public static int NumberSprute;
     public static int PosSlider;
 
+    [Header ("Menu-true, Game-false")]
+    public bool MenuOrGame;
+
     void Start()
     {
-        GameObject = GetComponent<RectTransform>();
+        if (MenuOrGame)
+        {
+            slideLeft.onClick.AddListener(LeftButton);
+            slideRight.onClick.AddListener(RightButton);
+            startInMenu.onClick.AddListener(SaveData);
+        }
+        else
+        {
+            RectTransformGun0 = Gun0.gameObject.GetComponent<RectTransform>();
+            RectTransformGun1 = Gun1.gameObject.GetComponent<RectTransform>();
+            RectTransformGun2 = Gun2.gameObject.GetComponent<RectTransform>();
+
+            menuInPause.onClick.AddListener(() => ActionMenu(MenuPause));
+            menuInWon.onClick.AddListener(() => ActionMenu(MenuWon));
+            menuInGameOver.onClick.AddListener(() => ActionMenu(MenuGameOver));
+            Gun0.onClick.AddListener(() => MoveButton(50, 0, 0, 0));
+            Gun1.onClick.AddListener(() => MoveButton(0, 50, 0, 1));
+            Gun2.onClick.AddListener(() => MoveButton(0, 0, 50, 2));
+            pause.onClick.AddListener(() => Pause(0,true));
+            backPause.onClick.AddListener(() => Pause(1, false));
+            nextMove.onClick.AddListener(Controller.instance.NextMoveBot);
+            startGame.onClick.AddListener(StartGame);
+            showAd.onClick.AddListener(AD.instance.UserOptToWatchAd);
+        }
         PosSlider = 750;
         NumberSprute = 0;
     }
-    public void OnPointerDown(PointerEventData eventData)
+
+    public void MoveButton(int posYGun0, int posYGun1, int posYGun2, int NumberGun)
     {
-        switch (gameObject.name)
-        {
-            case "Slide left":
-                LeftButton();
-                break;
-
-            case "Slide right":
-                RightButton();
-                break;
-
-            case "Start":
-                SaveData();
-                Loadscene.instance.LoadScene(1);
-                break;
-
-            case "Gun 0":
-                Aiming.NumberGun = 0;
-                MoveButton(0,150,-150);
-                break;
-
-            case "Gun 1":
-                Aiming.NumberGun = 1;
-                MoveButton(-150,150,0);
-                break;
-
-            case "Gun 2":
-                Aiming.NumberGun = 2;
-                MoveButton(-150,0,150);
-                break;
-
-            case "Pause":
-                Time.timeScale = 0;
-                MenuPanel.SetActive(true);
-                break;
-
-            case "BackPause":
-                Time.timeScale = 1;
-                MenuPanel.SetActive(false);
-                break;
-
-            case "Menu":
-                Time.timeScale = 1;
-                MenuPanel.SetActive(false);
-                Loadscene.instance.LoadScene(0);
-                break;
-
-            case "Button next":
-                Controller.instance.NextMoveBot();
-                break;
-
-            case "Start game":
-                MenuPanel.SetActive(false);
-                Controller.instance.StartGame();
-                break;
-
-            case "Show ad":
-                AD.instance.UserOptToWatchAd();
-                break;
-        }
+        RectTransformGun0.DOAnchorPos(new Vector2(-150, posYGun0), 0.2f);
+        RectTransformGun1.DOAnchorPos(new Vector2(0, posYGun1), 0.2f);
+        RectTransformGun2.DOAnchorPos(new Vector2(150, posYGun2), 0.2f);
+        Aiming.NumberGun = NumberGun;
     }
-    public void OnPointerUp(PointerEventData eventData)
-    {
-    }
-    public void MoveButton(int posXGun1, int posXGun2, int posXGameObj)
-    {
-        GameObject.DOAnchorPos(new Vector2(posXGameObj, 50), 0.2f);
-        Gun1.DOAnchorPos(new Vector2(posXGun1, 0), 0.2f);
-        Gun2.DOAnchorPos(new Vector2(posXGun2, 0), 0.2f);
-    }
-    public void LeftButton()
+    void LeftButton()
     {
         if (NumberSprute > 0)
         {
@@ -101,7 +64,7 @@ public class Menu : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
     }
 
-    public void RightButton()
+    void RightButton()
     {
         if (NumberSprute < 6)
         {
@@ -111,11 +74,28 @@ public class Menu : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
     }
 
+    void Pause(int timeScale, bool menuPanel)
+    {
+        Time.timeScale = timeScale;
+        MenuPause.SetActive(menuPanel);
+    }
+    void StartGame()
+    {
+        StartPanel.SetActive(false);
+        Controller.instance.StartGame();
+    }
+    void ActionMenu(GameObject gameObject)
+    {
+        Time.timeScale = 1;
+        gameObject.SetActive(false);
+        Loadscene.instance.LoadScene(0);
+    }
     public void SaveData()
     {
         SaveJson.instance.save.NumberBots = int.Parse(DropdownLabel.GetComponent<Text>().text);
         SaveJson.instance.save.Name = InputFieldName.GetComponent<Text>().text;
         SaveJson.instance.save.PlayerBalloon = NumberSprute;
         PlayerPrefs.SetString("Save", JsonUtility.ToJson(SaveJson.instance.save));
+        Loadscene.instance.LoadScene(1);
     }
 }
