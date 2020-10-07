@@ -2,6 +2,7 @@
 using GoogleMobileAds.Api;
 using System;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class AD : MonoBehaviour
 {
@@ -9,8 +10,10 @@ public class AD : MonoBehaviour
 
     public GameObject GameOver, CharSprite, Char, ProrsImage;
     public Image HealthScaleChar;
+
     RewardBasedVideoAd RBV_Ad;
 
+    UnityAction ActionAddHealths;
     public void Start()
     {
         if (instance == null) { instance = this; }
@@ -19,6 +22,7 @@ public class AD : MonoBehaviour
         RBV_Ad.OnAdRewarded += HandleRewardBasedVideoRewarded;
         RBV_Ad.OnAdClosed += HandleRewardBasedVideoClosed;
         RBV_Ad.OnAdOpening += HandleRewardedAdOpening;
+        ActionAddHealths += AddHealths;
 
         RequestRewardBasedVideo();
     }
@@ -43,13 +47,7 @@ public class AD : MonoBehaviour
     }
     public void HandleRewardBasedVideoRewarded(object sender, Reward args)
     {
-        GameOver.SetActive(false);
-        CharSprite.SetActive(true);
-        ProrsImage.SetActive(true);
-        HealthScaleChar.fillAmount = 0.5f;
-        Char.GetComponent<MoveChar>().enabled = true;
-        Controller.NextMovePlayer = true;
-        Healths.isGameOver = false;
+        ActionAddHealths();
     }
     public void UserOptToWatchAd()
     {
@@ -57,5 +55,16 @@ public class AD : MonoBehaviour
         {
             RBV_Ad.Show();
         }
+    }
+
+    private void AddHealths()
+    {
+        GameOver.SetActive(false);
+        CharSprite.SetActive(true);
+        ProrsImage.SetActive(true);
+        HealthScaleChar.fillAmount = 0.5f;
+        Char.GetComponent<MoveChar>().enabled = true;
+        Controller.NextMovePlayer = true;
+        Healths.isGameOver = false;
     }
 }
